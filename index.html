@@ -55,46 +55,60 @@
         <section id="Experience" style="height: 100vh;">
             <hr class="solid">
             <div class="profiltext" style="font-size: 48px;">Experience</div>
-            <div style="text-align:center;">
-                <div style="object-fit:cover;">
-                    <img class="imgMultiple" src="assets/img/hackathon.png" />
-                    <img class="imgMultiple" src="assets/img/campusvarberg.jpg" />
+            <div class="images">
+                <div class="img-holderouterlayer">
+                    <div class="img-holder">
+                        <img src="assets/img/hackathon.png" style="height: 300px;width: 250px;object-fit:cover;"/>
+                        <p style="color:bisque">Hackathon 2021<br />AlexanderssonInstitutet</p>
+                    </div>
                 </div>
-                <div class="divCenter">
+                <div class="img-holderouterlayer">
+                    <div class="img-holder">
+                        <img src="assets/img/campusvarberg.jpg" style="height: 300px;
+        width: 250px;
+        object-fit: cover;"/>
+                        <p style="color:bisque">Campus Varberg<br />2020-2022</p>
+                    </div>
+                </div>
+
+            </div>
+    <!--<div class="divCenter">
+                    <p>
                     <p class="textStyleEdu">Hackathon 2021<br />Campus Varberg</p>
                     <p class="textStyleEdu">Campus Varberg<br />2020-2022</p>
-                </div>
-            </div>
+                    </p>
+                </div>-->
+            
         </section>
     </section>
 </body>
 </html>
 <style>
-    .divCenter{
-        margin-left:50%;
-        margin-right:50%;
+    .images {
+        display: flex;
+        padding: 0;
+        margin: auto;
+        width: 40%;
     }
-    .textStyleEdu {
-        width: 200px;
-        border: 5px solid #0063B2FF;
-    }
-    .pageCenter {
-        margin-left: auto;
-        margin-right: auto;
-        width:100%;
-        float: none;
-    }
-    .imgMultiple p {
-        width: 200px;
-        text-align: center;
-        border: 5px solid #0063B2FF;
-    }
-    .imgMultiple {
-        height: 300px;
-        width: 200px;
-        object-fit: cover;
-    }
-    
+.img-holderouterlayer
+{
+  min-width: 300px;
+  padding: 0 5px 0 5px;
+  text-align:center;
+}
+.img-holder {
+  position: relative;
+  margin:0;
+  padding:5px;
+  background-color: #333;
+}
+.img-holder p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  left: 50%;
+  text-align: center;
+  margin: 0;
+}
     .font {
         font-family: 'Mate SC', serif;
     }
@@ -119,7 +133,7 @@
         width: 50%;
         width: 200px;
         height: 200px;
-        padding-top: 100px;
+        padding-top: 30vh;
     }
 
     .imgProfile {
@@ -129,7 +143,7 @@
     }
 
     .solid {
-        border-top: 3px solid #bbb;
+        border-top: 3px solid #0063B2FF;
     }
 
     .topmenu {
@@ -156,5 +170,9 @@
 
     html {
         scroll-behavior: smooth;
+    }
+    body{
+        margin:0;
+        padding:0;
     }
 </style>
