@@ -87,6 +87,7 @@
 </html>
 <style>
     .images {
+        flex-wrap:wrap;
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -149,14 +150,23 @@
     }
 
     .topmenu {
-        
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #0063B2FF;
+/*        animation-name:example;
+        animation-duration:4s;*/
+        background: linear-gradient(to right,#0063B2FF,#003152);
     }
+    @keyframes example {
+        from {
+            background-color: #0063B2FF;
+        }
 
+        to {
+            background-color: #003152;
+        }
+    }
     .topmenubutton a {
         float: right;
         display: block;
@@ -164,10 +174,11 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+        transition: all .2s linear;
     }
 
         .topmenubutton a:hover {
-            background-color: #111;
+            color: #111;
         }
 
     html {
