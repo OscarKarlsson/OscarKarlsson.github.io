@@ -9,59 +9,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <div>
-            <ul>
-                <li style="float:left"><a style="font-size:24px;">Oscar Karlsson</a></li>
-                <li><a href="http://www.github.com"><i class="fa fa-github" style="font-size:28px;"></i></a></li>
-                <li><a href="http://www.twitter.com"><i class="fa fa-linkedin" style="font-size:28px;"></i></a></li>
-            </ul>
-        </div>
-    </section>
-    <section style="padding-bottom: 100px;
+    <section class="font">
+        <section>
+            <div style="position: fixed; width:100%;">
+                <ul class="topmenu">
+                    <li class="topmenubutton" style="float:left"><a href="#Contact" style="font-size:24px;">Contact</a></li>
+                    <li class="topmenubutton" style="float:left"><a href="#Education" style="font-size:24px;">Education</a></li>
+                    <li class="topmenubutton" style="float:left"><a href="#Experience" style="font-size:24px;">Experience</a></li>
+                    <li class="topmenubutton"><a href="http://www.github.com"><i class="fa fa-github" style="font-size:28px;"></i></a></li>
+                    <li class="topmenubutton"><a href="https://www.linkedin.com/in/oscar-holstensson-karlsson-2939a7204"><i class="fa fa-linkedin" style="font-size:28px;"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="Contact" style="padding-bottom: 100px;
         height: 100vh;">
-        <div>
-            <div class="imgContainer">
-                <img class="imgProfile" src="assets/img/profile.jpg" />
+            <div>
+                <div class="imgContainer">
+                    <img class="imgProfile" src="assets/img/profile.jpg" />
+                </div>
+                <div class="profilTitle">
+                    Oscar <span style="color: #0063B2FF;">Karlsson</span>
+                </div>
+                <div class="profiltext">
+                    Varberg · 0763053100 ·
+                    <a href="mailto:Oscar@Karlsson.codes">Oscar@Karlsson.codes</a>
+                </div>
             </div>
-            <div class="profilTitle">
-                Oscar <span style="color: #0063B2FF;">Karlsson</span>
-            </div>
+        </section>
+        <section id="Education" style="height: 100vh;">
+            <hr class="solid">
+            <div class="profiltext" style="font-size: 48px;">Education</div>
+            <div class="profiltext" style="font-size: 32px;">Campus Varberg</div>
             <div class="profiltext">
-                Varberg · 0763053100 ·
-                <a href="mailto:Oscar@Karlsson.codes">Oscar@Karlsson.codes</a>
+                Agil systemutveckling i team - <b>VG</b> <br />
+                Databasutveckling och databasadministation - <b>VG</b><br />
+                Objektorienterad programmering - <b>VG</b><br />
+                Systemtesting - <b>VG</b><br />
+                Utveckling av Windowsapplikationer - <b></b><br />
+                Utveckling av webbapplikationer -<br />
+                Examensarbete -<br />
+                LIA 1 Grundläggande mjukvaruutveckling -<br />
+                LIA 2 Avancerad mjukvaruutveckling -<br />
             </div>
-        </div>
-    </section>
-    <section style="height: 60vh;"> 
-        <div class="profiltext" style="font-size: 48px;">Utbildning</div>
-        <div class="profiltext" style="font-size: 32px;">Campus Varberg</div>
-        <div class="profiltext">
-            Agil systemutveckling i team - <b>VG</b> <br />
-            Databasutveckling och databasadministation - <b>VG</b><br />
-            Objektorienterad programmering - <b>VG</b><br />
-            Systemtesting - <b>VG</b><br />
-            Utveckling av Windowsapplikationer - <b>VG</b><br />
-            Utveckling av webbapplikationer<br />
-            Examensarbete <br />
-            LIA 1 Grundläggande mjukvaruutveckling <br />
-            LIA 2 Avancerad mjukvaruutveckling <br />
-        </div>
+        </section>
+        <section id="Experience" style="height: 100vh;">
+            <hr class="solid">
+            <div class="profiltext" style="font-size: 48px;">Experience</div>
+            <div style="text-align:center;">
+                <div style="object-fit:cover;">
+                    <img class="imgMultiple" src="assets/img/hackathon.png" />
+                    <img class="imgMultiple" src="assets/img/campusvarberg.jpg" />
+                </div>
+                <div class="divCenter">
+                    <p class="textStyleEdu">Hackathon 2021<br />Campus Varberg</p>
+                    <p class="textStyleEdu">Campus Varberg<br />2020-2022</p>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 </html>
 <style>
+    .divCenter{
+        margin-left:50%;
+        margin-right:50%;
+    }
+    .textStyleEdu {
+        width: 200px;
+        border: 5px solid #0063B2FF;
+    }
+    .pageCenter {
+        margin-left: auto;
+        margin-right: auto;
+        width:100%;
+        float: none;
+    }
+    .imgMultiple p {
+        width: 200px;
+        text-align: center;
+        border: 5px solid #0063B2FF;
+    }
+    .imgMultiple {
+        height: 300px;
+        width: 200px;
+        object-fit: cover;
+    }
+    
+    .font {
+        font-family: 'Mate SC', serif;
+    }
+
     .profiltext {
         text-align: center;
         font-family: 'Mate SC', serif;
         font-size: 20px;
     }
+
     .profilTitle {
         text-align: center;
         font-family: 'Mate SC', serif;
         font-weight: 800;
         font-size: 34px;
     }
+
     .imgContainer {
         display: flex;
         margin-left: auto;
@@ -71,33 +121,40 @@
         height: 200px;
         padding-top: 100px;
     }
+
     .imgProfile {
         width: 200px;
         height: 200px;
         border-radius: 50%;
     }
-    ul {
+
+    .solid {
+        border-top: 3px solid #bbb;
+    }
+
+    .topmenu {
+        
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #0063B2FF;
-        border: 3px solid #2d2d2d;
     }
 
-    li {
+    .topmenubutton a {
         float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
     }
 
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+        .topmenubutton a:hover {
+            background-color: #111;
         }
 
-            li a:hover {
-                background-color: #111;
-            }
+    html {
+        scroll-behavior: smooth;
+    }
 </style>
