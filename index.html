@@ -24,7 +24,7 @@
         </section>
         <section id="Contact" style="padding-bottom: 100px;
         height: 100vh;">
-            <div>
+            <div style="padding-top:20vh;">
                 <div class="imgContainer">
                     <img class="imgProfile" src="assets/img/profile.jpg" />
                 </div>
@@ -133,15 +133,19 @@
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
-        width: 200px;
-        height: 200px;
-        padding-top: 30vh;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background-color: #003152;
+        animation-name:animationProfile;
+        animation-duration: 6s;
     }
 
     .imgProfile {
         width: 200px;
         height: 200px;
+        margin: 10px auto 20px;
+        display: block;
         border-radius: 50%;
     }
 
@@ -158,9 +162,9 @@
         animation-duration:4s;*/
         background: linear-gradient(to right,#0063B2FF,#003152);
     }
-    @keyframes example {
+    @keyframes animationProfile {
         from {
-            background-color: #0063B2FF;
+            background-color: white;
         }
 
         to {
